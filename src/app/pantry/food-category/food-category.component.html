@@ -1,0 +1,7 @@
+<div *ngFor="let category of foodCategories">
+  <div class="col-md-10 categoryContainer">
+    <h2>{{category.categoryName}}</h2>
+    <h3>{{category.categorySummary}}</h3>
+    <app-food-list></app-food-list>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+.navbar-brand {
+  margin-left: 1em;
+  font-size: 3em;
+}
+
+.navbarBG {
+  background-color: var(--colorMain);
+}

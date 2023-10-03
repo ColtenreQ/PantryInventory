@@ -1,0 +1,6 @@
+.categoryContainer {
+  background-color: var(--colorMain);
+  margin: 5% auto 0 auto;
+  border-radius: 4px;
+  padding: 2%;
+}
