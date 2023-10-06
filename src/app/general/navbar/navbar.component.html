@@ -1,3 +1,10 @@
 <nav class="navbar navbar-light navbarBG">
-  <span class="navbar-brand mb-0 h1"> Pantry Inventory</span>
+  <span class="navbar-brand mb-0 h1" (click)="navigateWithNavbar('all')"> Pantry Inventory</span>
+</nav>
+<nav class="navbar navbar-light navbarBG2 navbarSecondary">
+  <span class="mb-0 h2 navigButton" (click)="navigateWithNavbar('vegetables')"> Vegetables</span>
+  <span class="mb-0 h2 navigButton" (click)="navigateWithNavbar('fruit')"> Fruit </span>
+  <span class="mb-0 h2 navigButton" (click)="navigateWithNavbar('meat')"> Meat</span>
+  <span class="mb-0 h2 navigButton" (click)="navigateWithNavbar('grains')"> Grains </span>
+  <span class="mb-0 h2 navigButton" (click)="navigateWithNavbar('sweets')"> Sweets</span>
 </nav>

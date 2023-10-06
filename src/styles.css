@@ -3,5 +3,16 @@
 * {
   --colorMain: rgb(175, 154, 123);
   --colorSecondary: rgb(199, 183, 159);
+  --textMain: rgb(37, 5, 5);
+  --textSecondary:rgb(44, 9, 9);
+  --textHighlight: rgb(114, 38, 38);
 
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, nav {
+  color: rgb(37, 3, 3);
 }

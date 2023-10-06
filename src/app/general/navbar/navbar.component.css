@@ -6,3 +6,21 @@
 .navbarBG {
   background-color: var(--colorMain);
 }
+
+.navbarBG2 {
+  background-color: var(--colorSecondary);
+}
+
+.navbarSecondary {
+  padding: 0.5% 5% 0.4% 5%;
+}
+
+
+.navigButton {
+  cursor: pointer;
+}
+.navigButton:hover {
+  cursor: pointer;
+  color: var(--textHighlight);
+  text-shadow: 5px black;
+}
