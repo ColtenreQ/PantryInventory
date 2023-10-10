@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { foodItem } from 'src/app/models/foodItem.model';
+import { PantryService } from '../pantry.service';
 
 @Component({
   selector: 'app-food-item',
@@ -8,10 +9,13 @@ import { foodItem } from 'src/app/models/foodItem.model';
 })
 
 export class FoodItemComponent {
-  foodItems: foodItem[] = [
-    new foodItem("Beets", 3, "vegetable"),
-    new foodItem("Orange", 4, "fruit"),
-    new foodItem("Banana", 1, "fruit"),
-    new foodItem("Oreo", 14, "candy"),
-  ]
+
+  constructor(private PantryService: PantryService) {}
+
+  foodItems: foodItem[] = [];
+
+  ngOnInit() {
+    this.foodItems = this.PantryService.getFoodItems("Vegetables");
+  }
+
 }
