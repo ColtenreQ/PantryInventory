@@ -1,4 +1,7 @@
 
-<h1>Food list works
-
-</h1>
+<h1>Current Items in Pantry:</h1>
+<div *ngFor="let item of foodList">
+  <h2>{{item.itemName}}</h2>
+  <p>{{item.itemCategory}}</p>
+  <p>{{item.itemAmount}}</p>
+</div>
