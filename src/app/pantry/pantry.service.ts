@@ -19,4 +19,16 @@ export class PantryService {
   getPantryItems() {
     return this.pantryItems;
   }
+
+  getPantryItemsByType(type: string) {
+    let tempPantryItems = []
+    for(let item of this.pantryItems) {
+      if(item.itemCategory == type) {
+        tempPantryItems.push(item);
+        console.log(tempPantryItems);
+
+      }
+    }
+    return tempPantryItems;
+  }
 }

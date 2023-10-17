@@ -12,5 +12,5 @@ export class FoodListComponent {
 
   constructor(private pantryService: PantryService) {}
 
-  foodList = this.pantryService.getPantryItems();
+  foodList = this.pantryService.getPantryItemsByType("Fruit");
 }
